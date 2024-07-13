@@ -47,7 +47,7 @@ export default async function Home() {
           {!isAuth && <FileUpload classname="w-[50%]" />}
 
           <div className="mt-10 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl sm:m-4" >
-            <Image src="/highlight.png " width={900} height={600} quality={100} alt="demo" className="rounded-md bg-white p-2 shadow-2xl ring-1 ring-gray-900/10" />
+            <Image src="/demo.png " width={900} height={600} quality={100} alt="demo" className="rounded-md bg-white p-2 shadow-2xl ring-1 ring-gray-900/10" />
           </div>
         </section>
       </div>
