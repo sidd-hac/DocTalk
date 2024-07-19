@@ -9,21 +9,20 @@ import { useEffect, useState } from "react"
 
 type Props = {
     isLoading: boolean;
-    isAiLoading: boolean;
     messages: Message[]
 }
 
-const MessageList = ({ messages, isLoading, isAiLoading }: Props) => {
+const MessageList = ({ messages, isLoading }: Props) => {
 
 
-    if (isLoading) {
-        return (
-            <div className="w-full h-full flex justify-center items-center" >
-                <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
-            </div>
-        )
+    // if (isLoading) {
+    //     return (
+    //         <div className="w-full h-full flex justify-center items-center" >
+    //             <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
+    //         </div>
+    //     )
 
-    }
+    // }
     if (!messages) return <></>
     return (
         <div className="flex flex-col gap-2 px-4 mb-3" >
@@ -40,6 +39,9 @@ const MessageList = ({ messages, isLoading, isAiLoading }: Props) => {
 
                 </div>
             ))}
+             {isLoading && <div className="w-20 h-14 bg-slate-50 shadow-xl flex justify-center items-center border border-slate-100 rounded-2xl" >
+                <span className="animate-ping inline-flex rounded-full bg-blue-400 opacity-75 w-5 h-5"></span>
+            </div>}
         </div>
 
     )
