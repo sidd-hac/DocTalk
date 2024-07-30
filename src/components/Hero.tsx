@@ -6,6 +6,8 @@ import { ArrowRight, LogIn } from "lucide-react"
 import SubscribeButton from "./SubscribeButton"
 import Link from "next/link"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
+import Image from "next/image"
+import {motion} from "framer-motion"
 
 
 type Props = {
@@ -25,7 +27,7 @@ const Hero = ({ isPro, firstChat, isAuth }: Props) => {
 
   return (
 
-    <section className="flex flex-col justify-center items-center mt-10 space-y-5  " >
+    <section className="relative flex flex-col justify-center items-center mt-10 space-y-5  " >
       <div className="flex flex-col justify-center items-center space-y-4" >
         <div className="flex justify-center items-center gap-2">
           <h1 className="text-4xl max-sm:text-2xl text-black font-bold " >PDFs that Talk Back!</h1>
@@ -33,7 +35,9 @@ const Hero = ({ isPro, firstChat, isAuth }: Props) => {
         </div>
         {!isAuth ? <div className="max-sm:flex-col flex justify-center items-center gap-2" >
 
-          <Button className="h-8 font-semibold " disabled={!firstChat} >
+          <Button className="h-8 font-semibold " disabled={!firstChat}
+          
+          >
             <Link href={`/chat/${firstChat?.id}`} >
               Go to chats
             </Link>
@@ -51,6 +55,18 @@ const Hero = ({ isPro, firstChat, isAuth }: Props) => {
           <span> <Cursor cursorStyle="|" /> </span>
         </p>
       </div>
+      <motion.div className="absolute top-0 lg:right-10 md:right-6 flex max-sm:hidden" animate={{
+        translateY : [-20,20]
+      }}
+      transition={{
+        repeat : Infinity,
+        repeatType: "mirror",
+        duration: 3,
+        ease: "easeInOut"
+      }} 
+      >
+         <Image src="/star.png" alt="star" width={200} height={200} quality={100} />
+      </motion.div>
     </section>
   )
 }

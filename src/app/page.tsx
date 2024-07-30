@@ -1,5 +1,6 @@
 
 
+
 import Features from "@/components/Features";
 import FileUpload from "@/components/FileUpload";
 import Footer from "@/components/Footer";
@@ -54,7 +55,9 @@ export default async function Home() {
             <Image src="/highlight.png" width={900} height={600} quality={100} alt="demo" className="rounded-md bg-white p-2 shadow-2xl ring-1 ring-gray-900/10" />
           </div>
         </section>
+        
       </div>
+      
 
       <Process />
       <Features isAuth={isAuth} firstChatId={firstChat?.id} />

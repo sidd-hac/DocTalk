@@ -7,6 +7,7 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import Link from "next/link";
 
+
 type Props = {
     isAuth: boolean;
     firstChatId: number | undefined;
@@ -24,6 +25,7 @@ const Features = ({ isAuth, firstChatId }: Props) => {
                 <div className="flex flex-col justify-start items-center mt-10" >
                     <div className="flex max-sm:flex-col justify-center items-center gap-10" >
                         <Image src="/chat.webp" alt="feature" width={1000} height={900} quality={100} className="object-cover rounded-lg" />
+
                         <div className="flex flex-col gap-3 sm:gap-4 lg:gap-8" >
                             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl  " >Ask Questions</h1>
                             <p className="text-lg" >Have conversation with PDFs to get answers in natural language, along with citations and the source PDF.</p>
@@ -67,7 +69,7 @@ const Features = ({ isAuth, firstChatId }: Props) => {
                     <div className="flex max-sm:flex-col justify-center items-center gap-10" >
 
                         <div className="flex flex-col gap-3 sm:gap-4 lg:gap-8" >
-                        <Image src="/generate.webp" alt="feature" width={1200} height={900} quality={100} className=" flex object-cover rounded-lg sm:hidden" />
+                            <Image src="/generate.webp" alt="feature" width={1200} height={900} quality={100} className=" flex object-cover rounded-lg sm:hidden" />
                             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl  " >Generate Content</h1>
                             <p className="text-lg" >Unlock your content creation potential effortlessly. Streamline the process of generating articles, crafting essays, and generating summaries.</p>
                             <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-4 " >
