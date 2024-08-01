@@ -62,7 +62,8 @@ const Hero = ({ isPro, firstChat, isAuth }: Props) => {
         repeat : Infinity,
         repeatType: "mirror",
         duration: 3,
-        ease: "easeInOut"
+        ease: "easeInOut",
+        
       }} 
       >
          <Image src="/star.png" alt="star" width={200} height={200} quality={100} />

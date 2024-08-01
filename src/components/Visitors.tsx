@@ -1,11 +1,35 @@
+"use client"
 
+import { motion} from "framer-motion"
 
 
 
 
 const Visitors = () => {
+
+    const FadeInAnimationVarient = {
+        initial : {
+            opacity : 0,
+            y : 100
+        },
+
+        animate : {
+            opacity : 1,
+            y  : 0,
+            transition : {
+                duration : 0.5,
+                ease : "easeInOut"
+            }
+        }
+    }
+
+
     return (
-        <section className="p-10 bg-gradient-to-b from-indigo-500 to-purple-500 h-fit  w-full z-10" >
+        <motion.section className="p-10 bg-gradient-to-b from-indigo-500 to-purple-500 h-fit  w-full z-10" 
+        variants={FadeInAnimationVarient}
+        initial = "initial"
+        whileInView="animate"
+        >
             <div className="flex flex-col justify-center items-center p-8 space-y-8 " >
                 <h1 className=" text-xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white " >We help <span className="underline" >ambitious professionals</span>  succeed</h1>
                 <p className="text-lg text-white font-semibold " >Our results speak for themselves.</p>
@@ -28,7 +52,7 @@ const Visitors = () => {
                      <span className="text-sm font-semibold" >Return On Investment</span>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
