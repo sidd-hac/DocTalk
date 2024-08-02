@@ -35,9 +35,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={0}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <GraduationCap className="w-6 h-6" /> For students</h2>
@@ -47,9 +44,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={1}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <Microscope className="w-6 h-6" /> For Researchers</h2>
@@ -59,9 +53,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={2}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <NotepadText className="w-6 h-6" /> For Professionals</h2>
@@ -71,9 +62,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={3}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <FileStack className="w-6 h-6" />Multi-File Chats</h2>
@@ -83,9 +71,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={4}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <MessageSquareQuote className="w-6 h-6" />Cited Sources</h2>
@@ -95,9 +80,6 @@ const Nutshell = () => {
                     variants={FadeInAnimationVarient}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{
-                        once: true,
-                    }}
                     custom={5}
                 >
                     <h2 className="flex justify-center items-center gap-2 text-xl font-bold" > <Globe className="w-6 h-6" /> Any Language</h2>

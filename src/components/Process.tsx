@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image"
 import { animate, delay, motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
